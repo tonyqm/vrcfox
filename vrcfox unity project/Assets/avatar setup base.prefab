@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4518591562910165925}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -106,23 +106,23 @@ MonoBehaviour:
   mouthPrefix: exp/mouth/
   mouthShapeNames:
   - basis
-  - frown
+  - basis
+  - smile
+  - basis
   - smile
   - grimace
+  - grimace
   - smile
-  - grimace
-  - grimace
-  - frown
   browPrefix: exp/brows/
   browShapeNames:
   - basis
+  - basis
+  - basis
+  - basis
+  - basis
   - down
-  - up
-  - curious
-  - up
   - worried
-  - curious
-  - down
+  - basis
   createFaceTracking: 1
   ftPrefix: v2/
   ftShapes:
@@ -1631,7 +1631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchedFromSDKPipeline: 0
   completedSDKPipeline: 1
-  blueprintId: avtr_0d4dec96-6c39-435f-8b0a-d244d4eda534
+  blueprintId: avtr_4c8a8cea-37e8-4c8c-945a-6d647b65a880
   contentType: 0
   assetBundleUnityVersion: 
   fallbackStatus: 3
@@ -1771,9 +1771,10 @@ MonoBehaviour:
     isDefault: 0
   - isEnabled: 0
     type: 4
-    animatorController: {fileID: 0}
+    animatorController: {fileID: 9100000, guid: 52dadc37685f7e34195a26d22a7f9ffa,
+      type: 2}
     mask: {fileID: 0}
-    isDefault: 1
+    isDefault: 0
   - isEnabled: 0
     type: 5
     animatorController: {fileID: 9100000, guid: e670d4102b561d543b6c3c18b8cf1e77,
@@ -1830,38 +1831,222 @@ MonoBehaviour:
     name: rig_hand 6 gun
   - hash: 1638421798
     name: rig_hand 7 thumbs up
+  - hash: 1267987864
+    name: die_hold
+  - hash: -1487177324
+    name: sadkick
+  - hash: -1176525199
+    name: backflip
+  - hash: 527264872
+    name: dance_loop
+  - hash: 2085203268
+    name: stand_cheer_loop
+  - hash: 390180112
+    name: stand_point
+  - hash: -306760433
+    name: stand_clap_loop
+  - hash: 884531561
+    name: stand_wave
+  - hash: 962413785
+    name: seated_raise_hand-hold
+  - hash: -710796399
+    name: vrc2_seated_point
+  - hash: 1083353907
+    name: vrc2_seated_laugh
+  - hash: -618450521
+    name: vrc2_seated_drum-loop
+  - hash: 172075476
+    name: vrc2_seated_disbelief
+  - hash: 1774229777
+    name: vrc2_seated_disapprove
+  - hash: 1244035295
+    name: seated_clap-loop
+  - hash: -604667415
+    name: seated_shake_fist
+  - hash: 711312144
+    name: BlendOut Stand
+  - hash: 316221916
+    name: getup_from_back
+  - hash: 1242512264
+    name: Prepare Standing
+  - hash: -1439543933
+    name: WaitForActionOrAFK
+  - hash: 1745884183
+    name: AFK
+  - hash: 1323262204
+    name: BlendOut
+  - hash: 877246816
+    name: Afk Init
+  - hash: 1056010405
+    name: Restore Tracking (stand)
+  - hash: -916604327
+    name: Prepare Sitting
+  - hash: 527979128
+    name: BlendOut Sit
+  - hash: 378145609
+    name: Restore Tracking (sit)
+  - hash: -741837223
+    name: Sit
+  - hash: -1927553680
+    name: Setup-VR
+  - hash: -1664241914
+    name: Swapping anim or leaving?
+  - hash: -445878826
+    name: Idle
+  - hash: -649004372
+    name: Setup-Desktop - Lay
+  - hash: -90647588
+    name: Lay_Down - Full
+  - hash: -181089812
+    name: Sitting Idle - Full
+  - hash: -1621179770
+    name: Sitting Legs Crossed - Full
+  - hash: 558009266
+    name: Sitting Legs Forward - Full
+  - hash: -424580156
+    name: Laying on Side - Left
+  - hash: -921935031
+    name: RestoreTracking
+  - hash: 1798720603
+    name: Laying on Side - Right
+  - hash: -1581929241
+    name: Sit legs down
+  - hash: 2017650772
+    name: Setup-Desktop - Sit
+  - hash: 1060880274
+    name: Grouned False
+  - hash: -489147926
+    name: Sleeping Left VR
+  - hash: -1476876966
+    name: Sleeping Right VR
+  - hash: 37837556
+    name: Laying on Side - Left VR
+  - hash: 1561788754
+    name: Laying on Side - Right VR
+  - hash: 219042982
+    name: Laying on Side - Right VR 0
+  - hash: 166369507
+    name: Laying on Side - Left VR 0
+  - hash: 876122109
+    name: Sleeping Right 0
+  - hash: -873444656
+    name: Sleeping Left 0
+  - hash: -366117041
+    name: Grouned False 0
+  - hash: -365492738
+    name: Sitting Legs Crossed - Full 0
+  - hash: 1042977515
+    name: Setup-Desktop - Sit - No Pose
+  - hash: -2022552870
+    name: Laying on Side - Left 0
+  - hash: -487115471
+    name: Sitting Idle - Full 0
+  - hash: -727587613
+    name: Laying on Side - Right 0
+  - hash: 1579004193
+    name: Sitting Legs Forward - Full 0
+  - hash: -1059850988
+    name: Lay_Down - Full 0
+  - hash: 1623579389
+    name: Setup-Desktop - Lay - No Pose
+  - hash: 1020997036
+    name: Sit legs down 0
+  - hash: 1612007759
+    name: Setup-VR - No Pose
+  - hash: -1512047616
+    name: Laydown Off - In FBT or 4 point
+  - hash: -1386334394
+    name: Setup-Desktop - Lay 0
+  - hash: -1210792574
+    name: Lay_Down - Full 1
+  - hash: 1161295222
+    name: Init-Wait4notFBT&Animation
+  - hash: 126094163
+    name: RestoreTracking 0
+  - hash: -1152895619
+    name: NotValid4Desktop
+  - hash: -1963515926
+    name: Fist
+  - hash: -1368897710
+    name: Point
+  - hash: 99779634
+    name: Open
+  - hash: 282634289
+    name: Peace
+  - hash: 935782528
+    name: RockNRoll
+  - hash: 420425210
+    name: Gun
+  - hash: 1949755150
+    name: Thumbs up
+  - hash: 2108076675
+    name: Idle
+  - hash: -998029940
+    name: Peace
+  - hash: 2050206447
+    name: Point
+  - hash: 297357552
+    name: Gun
+  - hash: -449848495
+    name: Open
+  - hash: -1652822560
+    name: Idle
+  - hash: 1781153929
+    name: Fist
+  - hash: -488267544
+    name: Thumbs up
+  - hash: -1592414362
+    name: RockNRoll
+  - hash: 1832720374
+    name: Idle
+  - hash: 78082261
+    name: Exit Existing
+  - hash: -1539317156
+    name: Enter new
+  - hash: -561052489
+    name: Idle
+  - hash: 1384820025
+    name: 'Entered Pose-Loco Off '
+  - hash: -1333502586
+    name: Loco Enabled
+  - hash: -971249711
+    name: Loco Off
+  - hash: -1672647182
+    name: Entered Pose-Loco On
+  - hash: 598949059
+    name: LocoNotAllowed4Pose
   - hash: 927299615
     name: basis
+  - hash: 1627440676
+    name: basis 0
+  - hash: 369620658
+    name: basis 1
+  - hash: -1894865144
+    name: basis 2
+  - hash: -133589090
+    name: basis 3
   - hash: 1205124559
     name: down
-  - hash: -809957849
-    name: up
-  - hash: 1601521538
-    name: curious
-  - hash: -1054679528
-    name: up 0
   - hash: 606987544
     name: worried
-  - hash: 327776126
-    name: curious 0
-  - hash: 188106133
-    name: down 0
+  - hash: 1718420029
+    name: basis 4
   - hash: -629658374
     name: basis
-  - hash: -818971815
-    name: frown
+  - hash: 772782429
+    name: basis 0
   - hash: 1430014658
     name: smile
-  - hash: -2085605352
-    name: grimace
+  - hash: 1493731787
+    name: basis 1
   - hash: -1656664433
     name: smile 0
+  - hash: -2085605352
+    name: grimace
   - hash: 1447439796
     name: grimace 0
-  - hash: 557915426
-    name: grimace 1
-  - hash: 1579845495
-    name: frown 0
+  - hash: -364478951
+    name: smile 1
   - hash: -576816719
     name: drivers
   - hash: -1965148844
